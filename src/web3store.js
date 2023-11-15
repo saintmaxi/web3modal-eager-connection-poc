@@ -45,7 +45,8 @@ watchAccount(async (account) => {
     }
     else {
       connected.set(false);
-      await disconnect();
+      // await disconnect();
+      web3modal.disconnect();
     }
 });
   
